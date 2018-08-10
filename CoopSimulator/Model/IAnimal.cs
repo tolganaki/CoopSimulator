@@ -15,12 +15,14 @@ namespace CoopSimulator.Model
         short Age { get; set; }
 
         /// <summary>
-        /// Life span of the animal (in days).
+        /// Total life span of the animal (in days).
+        /// This value will be pre-calculated at initialization.
         /// </summary>
         short LifeTime { get; set; }
 
         /// <summary>
         /// Sexual maturaty age of the animal (in days).
+        /// This value will be pre-calculated at initialization.
         /// </summary>
         short SexualMaturatyAge { get; set; }
 

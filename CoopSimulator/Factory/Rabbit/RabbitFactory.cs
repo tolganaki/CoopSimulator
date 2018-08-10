@@ -6,7 +6,7 @@ using System;
 namespace CoopSimulator.Factory.Rabbit
 {
     /// <summary>
-    /// Represent a Rabbit Factory class which provides methods to create Rabbit objects.
+    /// Represent a singleton Rabbit Factory class which provides methods to create Rabbit instances.
     /// </summary>
     public class RabbitFactory : AnimalFactory
     {
@@ -19,6 +19,7 @@ namespace CoopSimulator.Factory.Rabbit
 
         private RabbitFactory()
         {
+            // set Rabbit specific probability distibution methods
             Model.Rabbit.Rabbit.NormalLifeExpectancy = new Normal(App.SimulationConfig.AverageLifeExpectancy, App.SimulationConfig.LifeExpectancyStdDev);
             Model.Rabbit.Rabbit.NormalSexualMaturatyAge = new Normal(App.SimulationConfig.AverageSexualMaturatyAge, App.SimulationConfig.SexualMaturatyAgeStdDev);
             Model.Rabbit.Rabbit.NormalBirthCount = new Normal(App.SimulationConfig.AverageLitterCount, App.SimulationConfig.LitterStdDev);

@@ -1,5 +1,4 @@
-﻿using CoopSimulator.Factory;
-using CoopSimulator.Simulation.Events;
+﻿using CoopSimulator.Simulation.Events;
 using System;
 
 namespace CoopSimulator.Model

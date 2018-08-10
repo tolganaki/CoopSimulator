@@ -5,7 +5,7 @@ using System.Configuration;
 namespace CoopSimulator
 {
     /// <summary>
-    /// Static class which holds SimulationConfig and IAnimalFactory instances for the simulation modules to use
+    /// Static class which holds SimulationConfig and IAnimalFactory instances for the simulation modules to use.
     /// </summary>
     public static class App
     {

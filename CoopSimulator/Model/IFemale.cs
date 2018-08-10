@@ -7,6 +7,10 @@ namespace CoopSimulator.Model
     /// </summary>
     public interface IFemale : IAnimal
     {
+        /// <summary>
+        /// Female gives birth to new babies.
+        /// </summary>
+        /// <returns>Returns the new born animals list</returns>
         List<IAnimal> GiveBirth();
     }
 }

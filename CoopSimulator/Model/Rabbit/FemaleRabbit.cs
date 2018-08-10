@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace CoopSimulator.Model.Rabbit
 {
+    /// <summary>
+    /// Represents a female Rabbit
+    /// </summary>
     public class FemaleRabbit : Rabbit, IFemale
     {
         public FemaleRabbit() : this(0)

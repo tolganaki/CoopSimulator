@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace CoopSimulator.Simulation
 {
     /// <summary>
-    /// Defines asynchronous methods to handle the Simulation timed events.
+    /// Defines asynchronous methods to handle the Simulation timed events (processed animals).
     /// </summary>
     public interface ISimulationEventHandler
     {
