@@ -7,7 +7,7 @@ namespace CoopSimulator.Simulation.Events
     /// </summary>
     public class AnimalDeathEvent : IEvent
     {
-        public IAnimal Animal { get; set; }
+        public IAnimal Animal { get; }
 
         public AnimalDeathEvent(IAnimal animal)
         {

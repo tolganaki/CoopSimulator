@@ -7,6 +7,6 @@ namespace CoopSimulator.Simulation.Events
     /// </summary>
     public interface IEvent
     {
-        IAnimal Animal { get; set; }
+        IAnimal Animal { get; }
     }
 }

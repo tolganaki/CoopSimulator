@@ -22,7 +22,7 @@ namespace CoopSimulator
         public static void Initialize()
         {
             App.SimulationConfig = ConfigurationManager.GetSection("simulationConfig") as SimulationConfig;
-            App.AnimalFactory = SimulationFactory.GetAnimalFactory(App.SimulationConfig);
+            App.AnimalFactory = SimulationFactory.GetAnimalFactory();
         }
     }
 }

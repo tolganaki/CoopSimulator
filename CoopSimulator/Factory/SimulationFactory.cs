@@ -9,13 +9,12 @@ namespace CoopSimulator.Factory
     public static class SimulationFactory
     {
         /// <summary>
-        /// Provides animal factory instance for the given simulation configuration.
+        /// Provides animal factory instance from the current simulation configuration.
         /// </summary>
-        /// <param name="config">Simulation configuration</param>
         /// <returns>Returns animal factory</returns>
-        public static IAnimalFactory GetAnimalFactory(SimulationConfig config)
+        public static IAnimalFactory GetAnimalFactory()
         {
-            if (config.AnimalType == SimulationConfig.SimulationAnimalType.Rabbit)
+            if (App.SimulationConfig.AnimalType == SimulationConfig.SimulationAnimalType.Rabbit)
             {
                 return RabbitFactory.Instance;
             }
